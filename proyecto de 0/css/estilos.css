@@ -1,0 +1,391 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+
+}
+
+/* Reset de estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+/* Estilos para el encabezado (header) */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f2f2f2; /*  cambiar el color de fondo según mis preferencias */
+}
+/* Estilos para el logo */
+header a img {
+    max-width: 100px; /* Ajusta el tamaño máximo del logo según tus preferencias */
+    height: auto;
+}
+
+/* Estilos para la navegación (nav) */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos para la lista (ul) */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Estilos para los elementos de la lista (li) */
+li {
+    margin: 0 15px;
+}
+
+/* Estilos para los enlaces (a) */
+a {
+    text-decoration: none;
+    color: #333; /*  cambiar el color del texto según mis preferencias */
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móviles usando media query */
+@media only screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        margin-top: 20px;
+        justify-content: flex-start;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+/* Estilos para el carrusel */
+#carrusel {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 70px;
+}
+
+#carrusel img {
+    width: 100%;
+    height: auto;
+}
+
+/* Establecer un tamaño fijo para las imágenes en el carrusel */
+#carouselExample img {
+    width: 100%;
+    height: 600px; /* Ajusta la altura  */
+    object-fit: cover; /* Para asegurarse de que la imagen cubra completamente el contenedor */
+}
+ /* Estilos para la sección con el título y la descripción */
+ section {
+    text-align: center; /* Centrar el contenido */
+    padding: 50px; /* Añadir espaciado */
+}
+
+.titulo {
+    font-size: 2em; /* Tamaño del título */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.texto {
+    text-align: justify; /* Justificar el texto */
+    line-height: 1.6; /* Altura de línea para una mejor legibilidad */
+}
+
+/* Estilos para la sección con imagen y texto */
+.img-sec {
+    display: flex;
+    align-items: center;
+}
+
+.img-sec img {
+    max-width: 100%; /* Ajustar la imagen al ancho del contenedor */
+    margin-right: 20px; /* Espaciado entre la imagen y el texto */
+}
+
+.img-sec .texto {
+    flex: 1; /* Hace que el texto ocupe el espacio restante */
+}
+
+.img-sec p {
+    text-align: justify; /* Justificar el texto */
+}
+
+/* css de pagina de complejo */
+/* Estilos para la sección de servicios */
+.titulo{text-align: center;
+}
+ /* Estilos para la sección de servicios */
+ .servicios-column {
+    font-weight: bold;
+}
+
+.servicios-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.servicios-column li {
+    margin-bottom: 5px;
+}
+ .servicios {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea los elementos al principio del contenedor */
+    margin-top: 20px; /* Añade margen superior para separar de otros elementos */
+}
+
+.servicios h3 {
+    text-align: center; /* Alinea el título de servicios a la izquierda */
+}
+
+/* Estilos para la imagen */
+.servicios a {
+    display: block;
+}
+
+.servicios img {
+    border-radius: 10px; /* Agrega bordes redondeados */
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+}
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+/* estilos pag nosotros*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 100px;
+}
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/* estilos pagina de actividades */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 50px;
+}
+
+
+.actividades {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.actividad {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.actividad img {
+    width: 100%;        /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 200px;      /* Altura fija para todas las imágenes */
+    object-fit: cover;  /* Mantiene la proporción de la imagen recortándola si es necesario */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.actividad h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.actividad p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+/* Estilos para la sección de actividades-2 */
+.acrtividades-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+/* Estilos para cada actividad-2 */
+.actividad-2 {
+    flex: 0 0 calc(50% - 20px); /* 50% del ancho, restando un poco para el espacio entre los divs */
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.actividad-2 img {
+    width: 100%;        /* Establece el ancho de la imagen al 100% del contenedor */
+    height: 300px;      /* Altura fija para todas las imágenes */
+    object-fit: cover;  /* Mantiene la proporción de la imagen recortándola si es necesario */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.actividad-2 h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.actividad-2 p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+
+}
+
+
+/* estilos pagina de contacto*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+}
+.contact-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2, p {
+    margin-bottom: 20px;
+}
+
+/* Formulario */
+#contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input[type="text"],
+.input-group input[type="tel"],
+.input-group input[type="email"],
+.input-group input[type="date"],
+.input-group input[type="number"],
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-group {
+    display: flex;
+    align-items: center;
+}
+
+.phone-prefix {
+    background-color: #ccc;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    margin-right: -1px; /* Para que se una visualmente con el input */
+}
+
+.input-group input[type="tel"] {
+    border-radius: 0 5px 5px 0;
+}
+
+.input-group textarea {
+    height: 100px;
+    resize: vertical; /* Permitir redimensionar solo verticalmente */
+}
+
+/* Botón de enviar */
+.submit-btn {
+    grid-column: span 2; /* Para que tome todo el ancho del formulario */
+    background-color: #2E8B57; /* Verde Bosque */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #20693C; /* Un verde un poco más oscuro para el hover */
+}
